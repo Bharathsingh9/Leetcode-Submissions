@@ -1,0 +1,13 @@
+# Last updated: 7/3/2026, 12:46:50 PM
+class Solution(object):
+    def fib(self, n):
+        if n<=1:
+            return n
+        a,b=0,1
+        for _ in range(2,n+1):
+            a,b=b,a+b
+        return b
+
+
+
+        
