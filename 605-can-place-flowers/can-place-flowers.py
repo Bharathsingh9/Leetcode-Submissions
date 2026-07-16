@@ -17,7 +17,6 @@ class Solution:
             if flowerbed[-2]==0:
                 flowerbed[-1] = 1
                 count+=1
-            
         for i in range(1,len(flowerbed)-1):
             if flowerbed[i]==0:
                 if flowerbed[i+1]!=1 and flowerbed[i-1]!=1:
@@ -25,7 +24,6 @@ class Solution:
                     flowerbed[i]=1
                 if count == n:
                     return True
-        
         if count >= n:
             return True
         return False
